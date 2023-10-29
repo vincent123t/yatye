@@ -50,8 +50,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: space-around;
+  /*align-items: stretch;*/
 }
 
 main {
