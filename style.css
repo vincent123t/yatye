@@ -200,6 +200,11 @@ footer {
   background-color: #ffdfcb;
 }
 
+.back-icon a:focus {
+  color: #c09d72;
+  background-color: #ffdfcb;
+}
+
 #form-container {
   /*max-width: 800px;*/
   width: 80%;
