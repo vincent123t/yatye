@@ -55,8 +55,10 @@ sendMail.addEventListener("submit", function (e) {
   if (errorForm) { console.log("retour erreur mail"); return };
   console.log("errorForm après = ", errorForm);
 
-  const serviceID = "service_do2l5me";
-  const templateID = "template_v3v92by";
+  /*const serviceID = "service_do2l5me";*/
+  const serviceID = "yatye_gallery_service";
+  /*const templateID = "template_v3v92by";*/
+  const templateID = "yatye_gallery_template";
 
   emailjs.sendForm(serviceID, templateID, '#contact-form')
     .then(function (response) {
