@@ -201,7 +201,10 @@ footer {
 }
 
 .back-icon a:focus {
-  color: #c09d72;
+  background-color: #ffdfcb;
+}
+
+.back-icon i:focus {
   background-color: #ffdfcb;
 }
 
