@@ -8,11 +8,12 @@ function deleteError(tag) {
   target.classList.remove("err-style");
 }
 
-// effacement du message du mail envoyé avec succès après 5 secondes
+// effacement du message du mail envoyé avec succès après 5 secondes puis retour à l'accueil
 function deleteSuccess(tag) {
   const target = document.getElementById(tag);
   target.innerText = "";
   target.classList.remove("success-style");
+  window.location.href = "index.html";
 }
 
 // vérification de l'input selon la rule et les paramètres transmis
@@ -31,6 +32,12 @@ function inputValidation(input, rule, msgTag, msg) {
     console.log("erreur sur : ", input, " errorForm = ", errorForm);
   }
 }
+
+// mise en place de l'écouteur sur le titre pour retour vers la page d'accueil (index) sur clic
+const goHome = document.getElementsByTagName("h1")[0];
+goHome.addEventListener("click", function (e) {
+  window.location.href = "index.html";
+});
 
 // mise en place de l'écouteur sur le bouton 'Envoyer' du formulaire de contact
 // + contrôle des champs saisis
